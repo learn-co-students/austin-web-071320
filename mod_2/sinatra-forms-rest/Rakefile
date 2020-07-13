@@ -1,0 +1,9 @@
+require_relative './config/environment'
+require 'sinatra/activerecord'
+require 'sinatra/activerecord/rake'
+
+desc 'Enter a console'
+ActiveRecord::Base.connection
+task :console do
+  Pry.start
+end

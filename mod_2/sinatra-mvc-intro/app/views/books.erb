@@ -1,0 +1,6 @@
+<h1>Read a Book</h1>
+<% @books.each do |book| %>
+  <h2><%= book.id %> <%= book.title %></h2>
+  <p><%= book.author%></p>
+  <p><%= book.snippet %></p>
+<% end %>
